@@ -1,0 +1,2 @@
+C:\Users\arfontai\Source\Repos\POC_IOT\IoTSuiteLib\IoTSuiteLib.csproj;neutral
+C:\Users\arfontai\Source\Repos\POC_IOT\POC_IOT\POC_IOT.csproj;arm

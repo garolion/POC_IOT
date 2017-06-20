@@ -1,0 +1,1 @@
+C:\Users\arfontai\OneDrive - Microsoft\Documents\Visual Studio 2017\Projects\POC_IOT\C2DTest\C2DTest.csproj;x64

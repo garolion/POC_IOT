@@ -1,0 +1,1 @@
+C:\Users\arfontai\Source\Repos\POC_IOT\C2DTest\C2DTest.csproj;arm

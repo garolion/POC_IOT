@@ -1,0 +1,14 @@
+C:\Users\arfontai\Documents\Visual Studio 2015\Projects\IoTToolkit\IoTSuiteLib\bin\Debug\IoTSuiteLib.dll
+C:\Users\arfontai\Documents\Visual Studio 2015\Projects\IoTToolkit\IoTSuiteLib\bin\Debug\IoTSuiteLib.pdb
+C:\Users\arfontai\Documents\Visual Studio 2015\Projects\IoTToolkit\IoTSuiteLib\obj\Debug\IoTSuiteLib.dll
+C:\Users\arfontai\Documents\Visual Studio 2015\Projects\IoTToolkit\IoTSuiteLib\obj\Debug\IoTSuiteLib.pdb
+C:\Users\arfontai\Documents\Visual Studio 2015\Projects\IoTToolkit\IoTSuiteLib\obj\Debug\IoTSuiteLib.csprojResolveAssemblyReference.cache
+C:\Users\arfontai\OneDrive - Microsoft\Documents\Visual Studio 2017\Projects\POC_IOT\IoTSuiteLib\bin\Debug\IoTSuiteLib.dll
+C:\Users\arfontai\OneDrive - Microsoft\Documents\Visual Studio 2017\Projects\POC_IOT\IoTSuiteLib\bin\Debug\IoTSuiteLib.pdb
+C:\Users\arfontai\OneDrive - Microsoft\Documents\Visual Studio 2017\Projects\POC_IOT\IoTSuiteLib\obj\Debug\IoTSuiteLib.dll
+C:\Users\arfontai\OneDrive - Microsoft\Documents\Visual Studio 2017\Projects\POC_IOT\IoTSuiteLib\obj\Debug\IoTSuiteLib.pdb
+C:\Users\arfontai\Source\Repos\POC_IOT\IoTSuiteLib\bin\Debug\IoTSuiteLib.dll
+C:\Users\arfontai\Source\Repos\POC_IOT\IoTSuiteLib\bin\Debug\IoTSuiteLib.pdb
+C:\Users\arfontai\Source\Repos\POC_IOT\IoTSuiteLib\obj\Debug\IoTSuiteLib.csprojResolveAssemblyReference.cache
+C:\Users\arfontai\Source\Repos\POC_IOT\IoTSuiteLib\obj\Debug\IoTSuiteLib.dll
+C:\Users\arfontai\Source\Repos\POC_IOT\IoTSuiteLib\obj\Debug\IoTSuiteLib.pdb
