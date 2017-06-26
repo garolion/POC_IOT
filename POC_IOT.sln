@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoTSuiteLib", "IoTSuiteLib\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C2DTest", "C2DTest\C2DTest.csproj", "{8E0CD7F6-4720-4A8A-A094-A00C0EB63CA7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AzureFunction", "AzureFunction", "{1B555844-CF32-41A1-8AFA-3C2F6E2CC36A}"
+	ProjectSection(SolutionItems) = preProject
+		AzureFunction\Project.json = AzureFunction\Project.json
+		AzureFunction\SendAlertFunction.cs = AzureFunction\SendAlertFunction.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

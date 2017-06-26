@@ -1,22 +1,11 @@
-﻿using System;
+﻿using Microsoft.Azure.Devices;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
-
-using Microsoft.Azure.Devices;
 using System.Text;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -52,30 +41,48 @@ namespace C2DTest
             await SendMessageAsync();
         }
 
+        //To Be Replaced by the line bellow at the Azure Function
+        //public static async Task Run(HttpRequestMessage req, TraceWriter log)
         private async Task SendMessageAsync()
         {
-        string connectionString = "HostName=iotdemoarfontaicc5f7.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=0lGxEtYycs9DFO9ig1/TycT0EVM5xRU6dxSId9vzomI=";
+            string deviceId;
 
-            ServiceClient serviceClient = ServiceClient.CreateFromConnectionString(connectionString);
+            #region section to uncomment in the Azure function
+            //string jsonRequest = await req.Content.ReadAsStringAsync();
+            //if (jsonRequest.Length == 0) { return; }
+
+            //data = JsonConvert.DeserializeObject(jsonRequest);
+
+            //if (data.DeviceId == null || data.DeviceId.Equals(string.Empty)) { return; }
+            //deviceId = data.DeviceId.ToString();
+            //log.Info($"JsonJata.DeviceId: " + data.DeviceId.ToString());
+            #endregion
+
+            #region section to remove in the Azure function
+            deviceId = "Rpi3arfontai";
+            #endregion
+
+            string connectionString = "HostName=iotdemoarfontaicc5f7.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=0lGxEtYycs9DFO9ig1/TycT0EVM5xRU6dxSId9vzomI=";
 
             try
             {
+                ServiceClient serviceClient = ServiceClient.CreateFromConnectionString(connectionString);
+
+                //log.Info($"Connected to IoT Hub!");
+
                 var message = new DeviceCommand();
-                message.Name = "SwitchLed";
-                message.MessageId = new Guid().ToString();
+                message.Name = "SendAlert";
+                message.MessageId = Guid.NewGuid().ToString();
                 message.CreatedTime = DateTime.Now.ToString();
-
-
-
 
                 var commandMessage = new Microsoft.Azure.Devices.Message(Encoding.ASCII.GetBytes(JsonConvert.SerializeObject(message)));
 
-                await serviceClient.SendAsync("Rpi3arfontai", commandMessage);
-                                
+                await serviceClient.SendAsync(deviceId, commandMessage);
             }
-            // Raised by Azure IoT Hub if you mentionned an unknown DeviceId
             catch (Exception ex)
-            { }
+            {
+                //log.Info($"An Exception occured " + ex.StackTrace);
+            }
         }
     }
 }
