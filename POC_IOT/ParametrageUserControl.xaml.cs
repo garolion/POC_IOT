@@ -81,10 +81,18 @@ namespace POC_IOT
             if (PortButtonToggleSwitch.IsOn)
                 ConfigHelper.Config.ButtonPort = (Pin)PortButtonComboBox.SelectedItem;
 
-            ConfigHelper.Save();
-            accueilUserControl.InitializeRaspBerryPi();
-            FeedbackTextBlock.Visibility = Visibility.Visible;
-            FeedbackTextBlock.Text = "Sauvegarde effectuée";
+            try
+            {
+                ConfigHelper.Save();
+                accueilUserControl.InitializeRaspBerryPi();
+                FeedbackTextBlock.Visibility = Visibility.Visible;
+                FeedbackTextBlock.Text = "Settings successfully saved";
+            }
+            catch(Exception ex)
+            {
+                FeedbackTextBlock.Visibility = Visibility.Visible;
+                FeedbackTextBlock.Text = "An error occured";
+            }
         }
 
         private void ReinitButton_Click(object sender, RoutedEventArgs e)

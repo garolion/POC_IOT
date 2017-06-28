@@ -14,9 +14,9 @@ namespace POC_IOT.Helper
     {
         private class ConfigMetaData
         {
-            public string deviceId = "Rpi3arfontai";
-            public string iotHubUri = "iotdemoarfontaicc5f7";
-            public string iotHubKey = "0lGxEtYycs9DFO9ig1/TycT0EVM5xRU6dxSId9vzomI=";
+            public string deviceId = "MyRasberry";
+            public string iotHubUri = "MyIoTHub";
+            public string iotHubKey = "MyIoTHubKey";
 
             public long pasDeTemps = 5000;
 

@@ -21,7 +21,7 @@ public static async Task Run(HttpRequestMessage req, TraceWriter log)
     string jsonRequest = await req.Content.ReadAsStringAsync();
     if (jsonRequest.Length == 0) { return; }
 
-    data = JsonConvert.DeserializeObject(jsonRequest);
+    dynamic data = JsonConvert.DeserializeObject(jsonRequest);
 
     if (data.DeviceId == null || data.DeviceId.Equals(string.Empty)) { return; }
     deviceId = data.DeviceId.ToString();

@@ -183,7 +183,7 @@ namespace POC_IOT
 
                 await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
                 {
-                    ViewModel.IotHubStatus = "Connecté";
+                    ViewModel.IotHubStatus = "Connected";
                 });
             }
             catch (Exception) { }

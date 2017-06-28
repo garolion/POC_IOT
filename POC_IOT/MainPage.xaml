@@ -10,11 +10,11 @@
     d:DesignWidth="800">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="AccueilButton" Content="Accueil" HorizontalAlignment="Left" Margin="26,46,0,0" VerticalAlignment="Top" Height="57" Width="105" Click="AccueilButton_Click"/>
-        <Button x:Name="ParametrageButton_Copy" Content="Paramétrage" HorizontalAlignment="Left" Margin="26,136,0,0" VerticalAlignment="Top" Height="57" Width="105" Click="ParametrageButton_Copy_Click"/>
+        <Button x:Name="AccueilButton" Content="Home" HorizontalAlignment="Left" Margin="26,46,0,0" VerticalAlignment="Top" Height="57" Width="105" Click="AccueilButton_Click"/>
+        <Button x:Name="ParametrageButton_Copy" Content="Settings" HorizontalAlignment="Left" Margin="26,136,0,0" VerticalAlignment="Top" Height="57" Width="105" Click="ParametrageButton_Copy_Click"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="581" Margin="150,29,0,0" VerticalAlignment="Top" Width="6"/>
 
-        <local:AccueilUserControl x:Name="AccueilPane" HorizontalAlignment="Left" Margin="160,0,0,0" VerticalAlignment="Top" Height="480" Width="480"></local:AccueilUserControl>
-        <local:ParametrageUserControl x:Name="ParametragePane" HorizontalAlignment="Left" Margin="160,0,0,0" VerticalAlignment="Top" Height="480" Width="480"></local:ParametrageUserControl>
+        <local:AccueilUserControl x:Name="AccueilPane" HorizontalAlignment="Left" Margin="160,0,0,0" VerticalAlignment="Top" Height="480" Width="600"></local:AccueilUserControl>
+        <local:ParametrageUserControl x:Name="ParametragePane" HorizontalAlignment="Left" Margin="160,0,0,0" VerticalAlignment="Top" Height="480" Width="600"></local:ParametrageUserControl>
     </Grid>
 </Page>

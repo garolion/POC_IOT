@@ -62,7 +62,7 @@ namespace POC_IOT.ViewModel
             this.Temperature = "N/A";
             this.Humidity = "N/A";
             this.Sound = "N/A";
-            this.IotHubStatus = "Déconnecté";
+            this.IotHubStatus = "Disconnected";
         }
     }
 }
